@@ -25,6 +25,7 @@ const Orbit = ({ radius }) => {
   const points = [];
   for (let i = 0; i <= 100; i++) {
     const angle = (i / 100) * 2 * Math.PI;
+
     points.push(new THREE.Vector3(radius * Math.cos(angle), 0, radius * Math.sin(angle)));
   }
 
@@ -53,6 +54,7 @@ const Planet = ({ name, size, distance, speed, texture, paused }) => {
 
   return (
     <group ref={planetRef}>
+      {/*  Planet Creation */}
       <mesh>
         <sphereGeometry args={[size, 64, 64]} />
         <meshStandardMaterial map={planetTexture} />

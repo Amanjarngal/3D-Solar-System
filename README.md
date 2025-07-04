@@ -1,12 +1,71 @@
-# React + Vite
+<h1>🌌 3D Solar System Simulation</h1>
+A fully interactive 3D simulation of our solar system built with React, Three.js, and @react-three/fiber. Includes orbital motion, real-time speed control, pause/resume, orbit toggle, dark/light mode, mobile-friendly UI, and reset functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3>🚀 Features</h3>
+-3D planets with textured spheres and orbits
 
-Currently, two official plugins are available:
+-Real-time orbital motion simulation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Speed control sliders (responsive for mobile)
 
-## Expanding the ESLint configuration
+-Pause/Resume button
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-Toggle between Light and Dark modes
+
+-Show/Hide orbital paths
+
+-Reset to default state
+
+-Stars background (space environment)
+
+-Mobile responsive dropdown panel
+
+<h3>📦 Tech Stack</h3>
+-React
+
+-Three.js
+
+-@react-three/fiber
+
+-@react-three/drei
+
+-react-icons
+
+<h2>✨ Key Functionalities (How It Works) </h2>
+<h3>🌍 Planet Creation</h3>
+
+-Each planet is created using <mesh> with <sphereGeometry> for shape and TextureLoader for realistic textures.
+
+-Position updates continuously using <b>useFrame</b> with trigonometry:
+
+x = distance * Math.cos(angle)
+z = distance * Math.sin(angle)
+
+<h3>🌀 Orbit Creation</h3>
+-Orbits are created as a circle of 100 points using THREE.Vector3, drawn with <line> and BufferGeometry.
+
+<h2>🕹️ Controls</h2>
+-OrbitControls: for zoom, rotate, and pan
+
+-SpeedControlPanel: sliders to adjust planet speed
+
+-PauseButton: toggle animation on/off
+
+-Reset Button: restores default speed, theme, orbit display
+
+-Theme Toggle: switch between dark and light UI modes
+
+-Orbit Toggle: hide/show orbit rings
+
+-Responsive Panel: mobile-friendly dropdown UI for speed control
+
+<h2>🔧 How to Run the Project Locally</h2>
+# Clone the repo
+   git clone https://github.com/your-username/3d-solar-system.git
+   cd 3d-solar-system
+
+# Install dependencies
+  npm install
+
+# Start the app
+  npm run dev
