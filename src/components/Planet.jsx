@@ -8,11 +8,11 @@ import PauseButton from './PauseButton';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
 const planetData = [
-  { name: 'Mercury', size: 0.3, distance: 4, speed: 0.01, texture: 'mercury.jpg' },
-  { name: 'Venus', size: 0.5, distance: 6, speed: 0.01, texture: 'venus.jpg' },
-  { name: 'Earth', size: 0.55, distance: 8, speed: 0.01, texture: 'earth.jpg' },
-  { name: 'Mars', size: 0.4, distance: 10, speed: 0.006, texture: 'mars.jpg' },
-  { name: 'Jupiter', size: 1.1, distance: 13, speed: 0.005, texture: 'jupiter.jpg' },
+  { name: 'Mercury', size: 0.3, distance: 4, speed: 0.006, texture: 'mercury.jpg' },
+  { name: 'Venus', size: 0.5, distance: 6, speed: 0.005, texture: 'venus.jpg' },
+  { name: 'Earth', size: 0.55, distance: 8, speed: 0.005, texture: 'earth.jpg' },
+  { name: 'Mars', size: 0.4, distance: 10, speed: 0.005, texture: 'mars.jpg' },
+  { name: 'Jupiter', size: 1.1, distance: 13, speed: 0.004, texture: 'jupiter.jpg' },
   { name: 'Saturn', size: 1, distance: 16, speed: 0.004, texture: 'saturn.jpg' },
   { name: 'Uranus', size: 0.7, distance: 19, speed: 0.003, texture: 'uranus.jpg' },
   { name: 'Neptune', size: 0.7, distance: 22, speed: 0.002, texture: 'neptune.jpg' }
