@@ -42,9 +42,11 @@ x = distance * Math.cos(angle)
 z = distance * Math.sin(angle)
 
 <h3>🌀 Orbit Creation</h3>
+
 -Orbits are created as a circle of 100 points using THREE.Vector3, drawn with <line> and BufferGeometry.
 
 <h2>🕹️ Controls</h2>
+
 -OrbitControls: for zoom, rotate, and pan
 
 -SpeedControlPanel: sliders to adjust planet speed
@@ -61,14 +63,19 @@ z = distance * Math.sin(angle)
 
 <h2>🔧 How to Run the Project Locally</h2>
 # Clone the repo
+
    git clone https://github.com/your-username/3d-solar-system.git
+
    cd 3d-solar-system
 
-# Install dependencies
+#Install dependencies
+
   npm install
 
-# Start the app
+#Start the app
+
   npm run dev
 
 <h3>Live Links</h3>
+
 https://3d-solar-system-simulatio.netlify.app/
