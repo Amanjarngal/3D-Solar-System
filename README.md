@@ -69,3 +69,6 @@ z = distance * Math.sin(angle)
 
 # Start the app
   npm run dev
+
+<h3>Live Links</h3>
+https://3d-solar-system-simulatio.netlify.app/
